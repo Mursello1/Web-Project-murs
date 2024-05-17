@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Form Başarıyla Gönderildi</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Başarıyla Gönderildi</h2>
+        <p><strong>İsim:</strong> <span id="name"></span></p>
+        <p><strong>E-posta:</strong> <span id="email"></span></p>
+        <p><strong>Mesaj:</strong> <span id="message"></span></p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('name').textContent = params.get('name');
+            document.getElementById('email').textContent = params.get('email');
+            document.getElementById('message').textContent = params.get('message');
+        });
+    </script>
+</body>
+</html>
