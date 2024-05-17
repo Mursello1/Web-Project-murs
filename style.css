@@ -1,0 +1,119 @@
+body {
+    background-color: #222;
+    color: #fff;     
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success {
+    color: rgb(87, 179, 87);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.result-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.log-in {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999; 
+}
+
+.button {
+    background-color: #d3cece;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 3px;
+}
+
+.button:hover {
+    background-color: #e7e4e4;
+}
+
+.form-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center; /* Center the submit button */
+    margin-top: 10px; /* Add margin to separate from input fields */
+}
+
+.giriş-container {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px; /* Fixed height for the textarea */
+    resize: none; /* Prevent resizing */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button.clear {
+    background-color: #f44336;
+}
+.button.validate {
+    background-color: #ffc107;
+}
