@@ -116,11 +116,11 @@ input[type="submit"]:hover {
     justify-content: space-between;
 }
 
-.menu-button.clear {
+.button.clear {
     background-color: #f44336;
 }
-.menu-button.validate {
-    background-color: #ffc107;
+.button.validate {
+    background-color: #25b46a;
 }
 
 .form-container span {
@@ -273,7 +273,7 @@ a:active {
 
 #duzcespor-page header {
     background: #1f1f1f;
-    color: #e0e0e0;
+    color: #eaeaea;
     padding: 1rem 0;
     text-align: center;
 }
@@ -317,7 +317,8 @@ a:active {
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.5);
     width: 500px;
-    margin:auto;
+    margin:auto ;
+    margin-top:10%;
 }
 
 .pokemon-section input {

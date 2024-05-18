@@ -11,19 +11,19 @@ if (isset($_POST['username']) && isset($_POST['password'])){
     $pass = validate($_POST['password']);
     
     if (empty($uname)){
-        header("Location: login.php?error=User Name is required");
+        header("Location: login.php?error=Kullanıcı adı gerekli");
         exit();
     }
     else if(empty($pass)){
-        header("Location: login.php?error=Password is required");
+        header("Location: login.php?error=Şifre gerekli");
         exit();
     }
     else if (!filter_var($uname, FILTER_VALIDATE_EMAIL)) {
-        header("Location: login.php?error=Invalid email format");
+        header("Location: login.php?error=Geçersiz e-posta formatı");
         exit();
     }
     else if ($uname !== 'b231210014@sakarya.edu.tr' || $pass !== 'b231210014') {
-        header("Location: login.php?error=Invalid username or password");
+        header("Location: login.php?error=Geçersiz kullanıcı adı veya şifre");
         exit();
     }
     else {

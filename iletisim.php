@@ -36,9 +36,9 @@
                 <p class="error" v-if="errors.message">{{ errors.message }}</p>
             </div>
             <div class="validate-buttons">
-                <button type="button" class="menu-button clear" @click="clearForm">Temizle</button>
-                <button type="submit" class="menu-button validate" @click="validateFormWithJS">Gönder JS</button>
-                <button type="submit" class="menu-button validate" @click="validateFormWithVue">Gönder Vue</button>
+                <button type="button" class="button clear" @click="clearForm">Temizle</button>
+                <button type="submit" class="button validate" @click="validateFormWithJS">Gönder JS</button>
+                <button type="submit" class="button validate" @click="validateFormWithVue">Gönder Vue</button>
             </div>
         </form>
         <p class="success" v-if="successMessage">{{ successMessage }}</p>
