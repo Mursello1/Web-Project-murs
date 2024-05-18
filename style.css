@@ -166,15 +166,11 @@ input[type="submit"]:hover {
 }
 
 a {
-    color: #1a0dab; /* Default link color (blue) */
+    color: #3e34af; /* Default link color (blue) */
 }
 
 a:hover {
     color: #ff0000; /* Link color when hovered over (red) */
-}
-
-a:visited {
-    color: #a3399c; /* Color of visited links (purple) */
 }
 
 a:active {
