@@ -30,7 +30,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         header("Location: login.php?success");
         exit();
     }
-}
+} 
 else{
     header("Location: login.php?error");
     exit();

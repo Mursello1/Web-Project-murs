@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>İletişim Sayfası</title>
 </head>
 <body>
     <div class="log-in">
-        <button class="button"><a href="login.php" target="_self">Log in</a></button>
+        <button class="menu-button"><a href="login.php" target="_self">Log in</a></button>
     </div>
-    <button class="button"><a href="hakkimda.php" target="_self">Hakkımda</a></button>
-    <button class="button"><a href="ozgecmis.php" target="_self">Özgeçmiş</a></button>
-    <button class="button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
-    <button class="button"><a href="iletisim.php" target="_self">İletişim</a></button>
-    <button class="button"><a href="sehrim.php" target="_self">Şehrim</a></button>
-    <button class="button"><a href="mirasimiz.php" target="_self">Mirasımız</a></button>
+    <button class="menu-button"><a href="hakkimda.html" target="_self">Hakkımda</a></button>
+    <button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
+    <button class="menu-button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
+    <button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
+    <button class="menu-button"><a href="sehrim.php" target="_self">Şehrim</a></button>
+    <button class="menu-button"><a href="mirasimiz.php" target="_self">Mirasımız</a></button>
 
     <div id="app" class="form-container">
         <h2>İletişim Formu</h2>
@@ -34,10 +35,10 @@
                 <textarea id="message" v-model="message" ref="message"></textarea>
                 <p class="error" v-if="errors.message">{{ errors.message }}</p>
             </div>
-            <div class="buttons">
-                <button type="button" class="button clear" @click="clearForm">Temizle</button>
-                <button type="submit" class="button validate" @click="validateFormWithJS">Validate with JS</button>
-                <button type="submit" class="button validate" @click="validateFormWithVue">Validate with Vue</button>
+            <div class="validate-buttons">
+                <button type="button" class="menu-button clear" @click="clearForm">Temizle</button>
+                <button type="submit" class="menu-button validate" @click="validateFormWithJS">Gönder JS</button>
+                <button type="submit" class="menu-button validate" @click="validateFormWithVue">Gönder Vue</button>
             </div>
         </form>
         <p class="success" v-if="successMessage">{{ successMessage }}</p>

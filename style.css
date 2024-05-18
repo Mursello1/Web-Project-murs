@@ -28,7 +28,7 @@ body {
     z-index: 999; 
 }
 
-.button {
+.menu-button {
     background-color: #d3cece;
     color: #fff;
     padding: 10px 20px;
@@ -40,7 +40,7 @@ body {
     margin: 3px;
 }
 
-.button:hover {
+.menu-button:hover {
     background-color: #e7e4e4;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .submit-container {
     display: flex;
-    justify-content: center; /* Center the submit button */
+    justify-content: center; /* Center the submit menu-button */
     margin-top: 10px; /* Add margin to separate from input fields */
 }
 
@@ -106,14 +106,77 @@ input[type="submit"]:hover {
     margin-bottom: 15px;
 }
 
-.buttons {
+.validate-buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.button.clear {
+.menu-button.clear {
     background-color: #f44336;
 }
-.button.validate {
+.menu-button.validate {
     background-color: #ffc107;
+}
+
+.form-container span {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+    .menu-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .log-in {
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .submit-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.container {
+    margin-top:8%;
+    display: flex;
+    justify-content: space-between; /* Items placed at the beginning and end of the container */
+}
+
+.box {
+    text-align: center;
+    flex: 1; /* Equal width for both containers */
+}
+
+.box img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.box p {
+    margin-top: 10px;
+}
+
+a {
+    color: #1a0dab; /* Default link color (blue) */
+}
+
+a:hover {
+    color: #ff0000; /* Link color when hovered over (red) */
+}
+
+a:visited {
+    color: #a3399c; /* Color of visited links (purple) */
+}
+
+a:active {
+    color: #008000; /* Color of active links (green) */
 }

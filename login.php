@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -10,14 +11,14 @@
 <body>
 
 <div class="log-in">
-<button class="button"><a href="login.php" target="_self">Log in</a></button>
+<button class="menu-button"><a href="login.php" target="_self">Log in</a></button>
 </div>
-<button class="button"><a href="hakkimda.php" target="_self">Hakkımda</a></button>
-<button class="button"><a href="ozgecmis.php" target="_self">Özgeçmiş</a></button>
-<button class="button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
-<button class="button"><a href="iletisim.php" target="_self">İletişim</a></button>
-<button class="button"><a href="sehrim.php" target="_self">Şehrim</a></button>
-<button class="button"><a href="mirasimiz.php" target="_self">Mirasımız</a></button>
+<button class="menu-button"><a href="hakkimda.html" target="_self">Hakkımda</a></button>
+<button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
+<button class="menu-button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
+<button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
+<button class="menu-button"><a href="sehrim.php" target="_self">Şehrim</a></button>
+<button class="menu-button"><a href="mirasimiz.php" target="_self">Mirasımız</a></button>
 
 <div class="form-container">
 <div class="giriş-container">
@@ -29,7 +30,7 @@
 <?php if (isset($_GET['error'])) { ?> 
     <p class="error"><?php echo $_GET['error']; ?></p>
     <?php } 
-    else
+    if(isset($_GET['success']))
     {
         ?> 
         <p class="success"><?php echo "Giriş Başarılı"; ?></p>
