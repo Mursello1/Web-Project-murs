@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<title>Log in</title>
 </head>
 
 <body>
@@ -17,8 +17,8 @@
 <button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
 <button class="menu-button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
 <button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
-<button class="menu-button"><a href="sehrim.php" target="_self">Şehrim</a></button>
-<button class="menu-button"><a href="mirasimiz.php" target="_self">Mirasımız</a></button>
+<button class="menu-button"><a href="sehrim.html" target="_self">Şehrim</a></button>
+<button class="menu-button"><a href="takimimiz.html" target="_self">Takımımız</a></button>
 
 <div class="form-container">
 <div class="giriş-container">

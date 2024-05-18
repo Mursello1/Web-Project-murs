@@ -30,7 +30,7 @@ body {
 
 .menu-button {
     background-color: #d3cece;
-    color: #fff;
+    color: #3e34af;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -38,6 +38,11 @@ body {
     border-radius: 5px;
     text-decoration: none;
     margin: 3px;
+}
+
+.menu-button a {
+    text-decoration: none;
+    color: inherit; 
 }
 
 .menu-button:hover {
@@ -58,8 +63,8 @@ body {
 
 .submit-container {
     display: flex;
-    justify-content: center; /* Center the submit menu-button */
-    margin-top: 10px; /* Add margin to separate from input fields */
+    justify-content: center; 
+    margin-top: 10px; 
 }
 
 .giriş-container {
@@ -84,8 +89,8 @@ textarea {
 }
 
 textarea {
-    height: 100px; /* Fixed height for the textarea */
-    resize: none; /* Prevent resizing */
+    height: 100px; 
+    resize: none; 
 }
 
 input[type="submit"] {
@@ -145,14 +150,16 @@ input[type="submit"]:hover {
 }
 
 .container {
-    margin-top:8%;
+    background-color: #2b2b2b;
+    margin-top:5%;
+    padding-top: 30px;
     display: flex;
-    justify-content: space-between; /* Items placed at the beginning and end of the container */
+    justify-content: space-between; 
 }
 
 .box {
     text-align: center;
-    flex: 1; /* Equal width for both containers */
+    flex: 1; 
 }
 
 .box img {
@@ -166,13 +173,147 @@ input[type="submit"]:hover {
 }
 
 a {
-    color: #3e34af; /* Default link color (blue) */
+    color: #3e34af; 
 }
 
 a:hover {
-    color: #ff0000; /* Link color when hovered over (red) */
+    text-decoration: underline ; 
 }
 
 a:active {
-    color: #008000; /* Color of active links (green) */
+    color: #008000; 
 }
+
+.text-p {
+    background-color: #444343;
+    border: 5px solid #2b2b2b;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left:10px;
+    margin-top: 20px;
+}
+
+.city-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.container-slider {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;     
+}
+
+.slider::-webkit-scrollbar {
+    display: none;  
+}
+
+.slider a {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    display: block; 
+}
+
+.slider img {
+    width: 100%;
+    height: 99%;
+    object-fit: cover; 
+    border-radius: 0.5rem; 
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+#duzcespor-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+#duzcespor-page header {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#duzcespor-page header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#duzcespor-page header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+#duzcespor-page section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #1f1f1f;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+}
+
+#duzcespor-page section h2 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+#duzcespor-page section p, 
+#duzcespor-page section ul {
+    color: #b0b0b0;
+}
+
+#duzcespor-page section ul {
+    padding-left: 1.5rem;
+}
+
+
+
+
+
+
+
