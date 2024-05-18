@@ -311,3 +311,45 @@ a:active {
     padding-left: 1.5rem;
 }
 
+.pokemon-section {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin:auto;
+}
+
+.pokemon-section input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.pokemon-section button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #6200ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pokemon-section button:hover {
+    background-color: #3700b3;
+}
+
+.pokemon-section img {
+    margin-top: 1rem;
+    margin:auto;
+    max-width: 100%;
+    border-radius: 0.25rem;
+}
+
+.pokemon-örnek {
+    color: #989898;
+}

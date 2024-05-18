@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>İlgi Alanlarım</title>
+</head>
+<body class="dark-theme">
+    <div class="menu">
+        <div class="log-in">
+            <button class="menu-button"><a href="login.php" target="_self">Log in</a></button>
+        </div>
+        <button class="menu-button"><a href="hakkimda.html" target="_self">Hakkımda</a></button>
+        <button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
+        <button class="menu-button"><a href="ilgi-alanlarim.html" target="_self">İlgi Alanlarım</a></button>
+        <button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
+        <button class="menu-button"><a href="sehrim.html" target="_self">Şehrim</a></button>
+        <button class="menu-button"><a href="takimimiz.html" target="_self">Takımımız</a></button>
+    </div>
+
+    <main>
+        <h1>İlgi Alanlarım</h1>
+        <section class="pokemon-section">
+            <p class="pokemon-örnek">(Örn: pikachu, charizard, blastoise, machamp)</p>
+            <h2>Pokémon Bulucu</h2>
+            <input type="text" id="pokemonName" placeholder="Pokémon adını girin">
+            <button onclick="fetchData()">Ara</button>
+            <img id="pokemonSprite" style="display:none;" alt="Pokémon Sprite">
+        </section>
+    </main>
+
+    <script>
+        async function fetchData() {
+            try {
+                const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+                if (!response.ok) {
+                    throw new Error("Could not fetch resource");
+                }
+
+                const data = await response.json();
+                const pokemonSprite = data.sprites.front_default;
+                const imgElement = document.getElementById("pokemonSprite");
+
+                imgElement.src = pokemonSprite;
+                imgElement.style.display = "block";
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+</html>

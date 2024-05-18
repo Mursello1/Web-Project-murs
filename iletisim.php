@@ -12,7 +12,7 @@
     </div>
     <button class="menu-button"><a href="hakkimda.html" target="_self">Hakkımda</a></button>
     <button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
-    <button class="menu-button"><a href="ilgi-alanlarim.php" target="_self">İlgi Alanlarım</a></button>
+    <button class="menu-button"><a href="ilgi-alanlarim.html" target="_self">İlgi Alanlarım</a></button>
     <button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
     <button class="menu-button"><a href="sehrim.html" target="_self">Şehrim</a></button>
     <button class="menu-button"><a href="takimimiz.html" target="_self">Takımımız</a></button>
