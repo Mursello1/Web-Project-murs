@@ -59,7 +59,7 @@ new Vue({
             if (Object.keys(this.errors).length === 0) {
                 this.redirectToSuccessPage();
             }
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault();
         }
     }
 });

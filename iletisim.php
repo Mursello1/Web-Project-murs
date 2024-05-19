@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>İletişim Sayfası</title>
 </head>
+
 <body>
     <div class="log-in">
         <button class="menu-button"><a href="login.php" target="_self">Log in</a></button>
     </div>
-    <button class="menu-button"><a href="hakkimda.html" target="_self">Hakkımda</a></button>
+    <button class="menu-button"><a href="index.html" target="_self">Hakkımda</a></button>
     <button class="menu-button"><a href="ozgecmis.html" target="_self">Özgeçmiş</a></button>
     <button class="menu-button"><a href="ilgi-alanlarim.html" target="_self">İlgi Alanlarım</a></button>
     <button class="menu-button"><a href="iletisim.php" target="_self">İletişim</a></button>
@@ -47,4 +49,5 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="Validate.js"></script>
 </body>
+
 </html>

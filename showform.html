@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>Form Başarıyla Gönderildi</title>
 </head>
+
 <body>
     <div class="form-container">
         <h2>Form Başarıyla Gönderildi</h2>
@@ -15,7 +17,7 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const params = new URLSearchParams(window.location.search);
             document.getElementById('name').textContent = params.get('name');
             document.getElementById('email').textContent = params.get('email');
@@ -23,4 +25,5 @@
         });
     </script>
 </body>
+
 </html>
